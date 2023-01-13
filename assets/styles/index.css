@@ -18,9 +18,19 @@
     font-weight: normal;
 }
 @font-face {
+    font-family: yekanbakh;
+    src: url(../fonts/yekanBakh/YekanBakh.Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
     font-family: Picoopic;
     src: url(../fonts/picoopic/picoopic-Bold.woff);
-    font-weight: bold;
+    font-weight: 700;
+}
+@font-face {
+    font-family: Picoopic;
+    src: url(../fonts/picoopic/picoopic-Medium.woff);
+    font-weight: 600;
 }
 @font-face {
     font-family: Picoopic;
@@ -28,8 +38,11 @@
     font-weight: normal;
 }
 
+* {
+    color-scheme: dark;
+}
 body, #__next {
-    @apply w-full h-screen bg-black-900 text-lenearWhite-900 f-col-center text-lg;
+    @apply w-full bg-black-900 text-lenearWhite-900 f-col-center text-lg;
     font-family: yekanbakh, picoopic, Arial, Helvetica, sans-serif;
     direction: rtl;
 }
@@ -50,4 +63,13 @@ a {
 }
 .picoopicFont {
     font-family: picoopic;
+}
+h2 {
+    @apply text-orange-800 text-4xl font-bold picoopicFont;
+}
+h3 {
+    @apply text-orange-800 text-2xl font-semibold picoopicFont;
+}
+p {
+    @apply mb-4 mt-2 opacity-50;
 }
