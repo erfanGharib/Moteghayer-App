@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Kalameh;
+    src: url(../fonts/kalameh/KalamehWeb-Bold.woff);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Kalameh;
+    src: url(../fonts/kalameh/KalamehWeb-Regular.woff);
+    font-weight: normal;
+}
+@font-face {
+    font-family: yekanbakh;
+    src: url(../fonts/yekanBakh/YekanBakh.Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Picoopic;
+    src: url(../fonts/picoopic/picoopic-Bold.woff);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Picoopic;
+    src: url(../fonts/picoopic/picoopic-Regular.woff);
+    font-weight: normal;
+}
+
+body, #__next {
+    @apply w-full h-screen bg-black-900 text-lenearWhite-900 f-col-center text-lg;
+    font-family: yekanbakh, picoopic, Arial, Helvetica, sans-serif;
+    direction: rtl;
+}
+.f-center {
+    @apply flex justify-center items-center;
+}
+.f-col-center {
+    @apply flex flex-col items-center;
+}
+.f-col-start {
+    @apply flex flex-col items-start;
+}
+.f-between {
+    @apply flex justify-between items-center;
+}
+a {
+    @apply hover:opacity-90 transition-opacity opacity-50;
+}
+.picoopicFont {
+    font-family: picoopic;
+}
