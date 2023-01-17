@@ -42,12 +42,15 @@
     color-scheme: dark;
 }
 body, #__next {
-    @apply w-full bg-black-900 text-lenearWhite-900 f-col-center text-lg;
+    @apply w-full bg-black-800 text-lenearWhite-900 f-col-center text-lg;
     font-family: yekanbakh, picoopic, Arial, Helvetica, sans-serif;
     direction: rtl;
 }
 .f-center {
     @apply flex justify-center items-center;
+}
+.f-start {
+    @apply flex justify-center items-start;
 }
 .f-col-center {
     @apply flex flex-col items-center;
@@ -55,17 +58,33 @@ body, #__next {
 .f-col-start {
     @apply flex flex-col items-start;
 }
+.f-col-end {
+    @apply flex flex-col items-center justify-end;
+}
+.f-col-r-center {
+    @apply flex flex-col-reverse justify-center items-center;
+}
 .f-between {
     @apply flex justify-between items-center;
 }
+@media (min-width: 1024px) {
+    .lg\:f-between {
+        @apply flex lg:flex-row lg:justify-between lg:items-center;
+    }
+}
+@media (min-width: 480px) {
+    .sm\:f-between {
+        @apply sm:flex sm:flex-row sm:justify-between sm:items-center;
+    }
+}
 a {
-    @apply hover:opacity-90 transition-opacity opacity-50;
+    @apply hover:opacity-100 transition-opacity opacity-70;
 }
 .picoopicFont {
     font-family: picoopic;
 }
 h2 {
-    @apply text-orange-800 text-4xl font-bold picoopicFont;
+    @apply text-orange-800 text-2xl leading-3 md:text-4xl font-bold picoopicFont;
 }
 h3 {
     @apply text-orange-800 text-2xl font-semibold picoopicFont;
@@ -73,3 +92,19 @@ h3 {
 p {
     @apply mb-4 mt-2 opacity-50;
 }
+
+/* .dropdown_item {
+    animation: scale 200ms 60ms both;
+}
+
+@keyframes scale {
+  from {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+} */

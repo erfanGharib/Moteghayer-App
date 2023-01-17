@@ -1,68 +1,11 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import GetStartedBtn from '../components/landingPage/getStartedBtn'
-
-import Logo from '../public/moteghayer-logo.svg'
-import laptopImg from '../assets/images/laptop.svg'
-import targetImg from '../assets/images/target.svg'
-import service1 from '../assets/images/servicesImg/service-1.svg'
-import creditCardIco from '../assets/icons/credit-card.svg'
-import downArrowIco from '../assets/icons/down-arrow.svg'
-import comeDownImg from '../assets/images/come-down.png'
-import NavBar from '../components/landingPage/navbar'
-
-const advantages = [
-  {
-    ico: creditCardIco,
-    desc: 'کاهش 10 برابری هزینه ها'
-  },
-  {
-    ico: creditCardIco,
-    desc: 'صرفه جویی در زمان'
-  },
-  {
-    ico: creditCardIco,
-    desc: 'کیفیت؟ این پیش ماست'
-  }
-];
-const services = [
-  {
-    img: service1,
-    title: 'مشتریان شما را مشیناسیم',
-    desc: 'انتخاب طرح هوشمند مطابق سلیقه مشتریان شما'
-  },
-  {
-    img: service1,
-    title: 'برترین فونت های فارسی',
-    desc: 'فونت حرفه ای برای طرح حرفه ای شما'
-  },
-  {
-    img: service1,
-    title: 'نگران رنگ ها نباش',
-    desc: 'دستیار هوشمند پیشنهاد رنگ برای طرح شما'
-  },
-  {
-    img: service1,
-    title: 'در یاد ها بمانید',
-    desc: 'دستیار هوشمند برای رعایت قوانین تجربه کاربری'
-  },
-  {
-    img: service1,
-    title: 'کار تیمی فراموش نشه',
-    desc: 'بهینه شده برای فعالیت های تیمی و مدیریت آسان تیم'
-  },
-  {
-    img: service1,
-    title: 'چاپ کنید تا ماندگار شوید',
-    desc: 'طرح های چاپی خودتان را خلق و آماده ارسال به چاپخانه کنید'
-  },
-];
+import Header from '../components/landingPage/header/header'
+import Main from '../components/landingPage/main/main'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const Landing = ({window}) => {
+const Landing = () => {
   return (
     <>
       <Head>
@@ -72,107 +15,8 @@ const Landing = ({window}) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className='w-full relative f-col-center bg-black-800' style={{ height: '83vh' }}>
-        <NavBar />
-        <div className='f-between z-10 w-4/5 pt-10' style={{ height: '100vh' }}>
-          <div className='w-1/3'>
-            <h2 style={{ lineHeight: '2.8rem' }}>
-              از تغییر نترسید زیرا تغییر قانون زندگی و موفقیت است
-            </h2>
-            <p className='mb-5 mt-1.5 opacity-50'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
-            <GetStartedBtn />
-          </div>
-
-          <div className='w-3/4 f-center -ml-24'>
-            <Image
-              src={laptopImg}
-              alt='لپ تاپ'
-              width={600}
-              height={100}
-            />
-          </div>
-        </div>
-
-        <div
-          style={{ background: `url(${comeDownImg.src})`, backgroundSize: '100% 100%' }}
-          className='w-full h-16 block absolute right-0 -bottom-16 z-0'
-        >
-          <Image
-            className='animate-bounce cursor-pointer mx-auto mt-16'
-            src={downArrowIco}
-            alt='لوگو متغیر'
-            width={30}
-            height={0}
-          />
-        </div>
-      </header>
-
-      <main className='w-4/5 mt-20 f-col-center'>
-        <section className='f-between w-2/3 h-80'>
-          {
-            advantages.map(({ ico, desc }, index) => {
-              return (
-                <div className='f-col-center' key={index}>
-                  <Image
-                    className='mx-auto'
-                    src={ico}
-                    alt={desc}
-                    width={100}
-                    height={0}
-                  />
-                  <h4 className='mt-3 leading-6 font-medium text-center'>{desc}</h4>
-                </div>
-              );
-            })
-          }
-        </section>
-
-        <section className='f-between'>
-          <div className='w-2/3 f-center'>
-            <Image
-              src={targetImg}
-              alt='هدف'
-              width={600}
-              height={0}
-            />
-          </div>
-          <div className='w-1/3 pb-10'>
-
-            <h2>درباره متغیر</h2>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
-
-            <h3>چرا متغیر؟</h3>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
-
-            <h3>ماموریت متغیر</h3>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
-          </div>
-        </section>
-
-        <section className='f-col-center justify-center w-4/5' style={{ height: '95vh' }}>
-          <h2 className='mb-7'>با متغیر خلق کنید تا دیده شوید</h2>
-          <div className='flex content-center flex-wrap'>
-            {
-              services.map(({ img, title, desc }, index) => {
-                return (
-                  <div className='f-col-center mt-5 w-1/3' key={index}>
-                    <Image
-                      className='mx-auto'
-                      src={img}
-                      alt={title}
-                      width={200}
-                      height={0}
-                    />
-                    <h4 className='mt-2 -mb-1 text-xl font-medium text-center'>{title}</h4>
-                    <p className='leading-5 w-2/3 text-center'>{desc}</p>
-                  </div>
-                );
-              })
-            }
-          </div>
-        </section>
-      </main>
-
+      <Header />
+      <Main />
       <footer></footer>
     </>
   )
