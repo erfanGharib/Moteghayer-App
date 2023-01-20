@@ -46,6 +46,9 @@ module.exports = {
       },
       transitionDelay: {
         400: '400ms'
+      },
+      boxShadow: {
+        'cs': '0 5px 50px #EF9E2C55' 
       }
     },
   },

@@ -17,8 +17,11 @@ const Header = () => {
                         از تغییر نترسید زیرا تغییر قانون زندگی و موفقیت است
                     </h2>
                     <p className='mb-5 mt-1 sm:mt-2 leading-6 opacity-50'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
-                    <GetStartedBtn />
-                    <Link className='mr-7' href='/moteghayer-team'>با متغیر آشنا شوید</Link>
+                    
+                    <div className='f-between'>
+                        <GetStartedBtn />
+                        <Link className='mr-7' href='/moteghayer-team'>با متغیر آشنا شوید</Link>
+                    </div>
                 </div>
 
                 <div className='w-full sm:w-3/4 flex justify-end lg:-ml-5'>
@@ -26,6 +29,7 @@ const Header = () => {
                         className='sm:w-5/6 w-full'
                         src={laptopImg}
                         alt='لپ تاپ'
+                        loading='eager'
                     />
                 </div>
             </div>

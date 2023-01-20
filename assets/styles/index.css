@@ -3,16 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: Kalameh;
-    src: url(../fonts/kalameh/KalamehWeb-Bold.woff);
-    font-weight: bold;
-}
-@font-face {
-    font-family: Kalameh;
-    src: url(../fonts/kalameh/KalamehWeb-Regular.woff);
-    font-weight: normal;
-}
-@font-face {
     font-family: yekanbakh;
     src: url(../fonts/yekanBakh/YekanBakh.Regular.ttf);
     font-weight: normal;
@@ -93,18 +83,28 @@ p {
     @apply mb-4 mt-2 opacity-50;
 }
 
-/* .dropdown_item {
-    animation: scale 200ms 60ms both;
+
+.bp4-navbar {
+    @apply !bg-black-750 text-opacity-70 text-lenearWhite-900;
 }
-
-@keyframes scale {
-  from {
-    opacity: 0;
-    transform: scale(1);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1.5);
-  }
+.bp4-icon, a[target="_blank"], span > svg, .bp4-button-text, .bp4-input {
+    @apply !text-base text-opacity-70 !border-black-600 !text-lenearWhite-900 placeholder:!text-lenearWhite-900 placeholder:!opacity-50;
+}
+.polotno-page-container > div > span > button > span > svg {
+    @apply !text-black-500;
+}
+.bp4-input {
+    @apply !bg-black-600 !pt-1.5 !pr-8 !pl-0 rounded-none border-0;
+}
+.bp4-input-group > .bp4-icon {
+    @apply right-0;
+}
+.bp4-button-text {
+    @apply !leading-none mt-1 !right-1 relative;
+}
+.bp4-divider {
+    @apply !border-black-600;
+}
+/* button:hover {
+    background-color: red !important;
 } */
