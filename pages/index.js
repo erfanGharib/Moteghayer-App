@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import Header from '../components/landingPage/header/header'
 import Main from '../components/landingPage/main/main'
+import Footer from '../components/landingPage/footer/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +16,7 @@ const Landing = () => {
 
       <Header />
       <Main />
-      <footer></footer>
+      <Footer />
     </>
   )
 }
