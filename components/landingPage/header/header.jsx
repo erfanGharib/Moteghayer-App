@@ -11,14 +11,14 @@ const Header = () => {
     return (
         <header className='w-full h-full relative f-col-center bg-black-780'>
             <NavBar />
-            <div className='lg:f-between f-col-r-center max-w-1360 z-10 w-4/5 pt-14 h-79vh sm:h-85vh'>
+            <div className='lg:f-between lg:flex-row f-col-r-center max-w-1360 z-10 w-4/5 pt-14 h-90vh'>
                 <div className='lg:w-1/3 sm:w-3/5 w-full lg:mt-0 mt-5'>
                     <h2 className='leading-9 sm:leading-tight'>
                         از تغییر نترسید زیرا تغییر قانون زندگی و موفقیت است
                     </h2>
                     <p className='mb-5 mt-1 sm:mt-2 leading-6 opacity-50'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
                     
-                    <div className='f-between'>
+                    <div>
                         <GetStartedBtn />
                         <Link className='mr-7' href='/moteghayer-team'>با متغیر آشنا شوید</Link>
                     </div>
@@ -26,7 +26,7 @@ const Header = () => {
 
                 <div className='w-full sm:w-3/4 flex justify-end lg:-ml-5'>
                     <Image
-                        className='sm:w-5/6 w-full'
+                        className='mt-5 h-full'
                         src={laptopImg}
                         alt='لپ تاپ'
                         loading='eager'

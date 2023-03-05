@@ -26,13 +26,13 @@ const NavBar = () => {
                         className='sm:w-20 w-16'
                     />
 
-                    <div className='mr-2 mt-1 text-black-600 w-24'>
+                    <div className='mr-2 mt-1 text-black-600 w-24 sm:block hidden'>
                         <h4 className='text-2xl font-bold -mb-2.5'>متغیر</h4>
                         <span className='opacity-70 text-black-500'>بنر ساز آنلاین</span>
                     </div>
                 </div>
 
-                <div className='sm:w-1/2 f-center sm:h-auto h-96 items-end'>
+                <div className='sm:w-1/2 flex justify-end items-center sm:h-auto h-96'>
                     <DropDown />
                 </div>
             </div>

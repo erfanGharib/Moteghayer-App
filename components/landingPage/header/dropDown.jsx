@@ -9,7 +9,7 @@ import GetStartedBtn from '../getStartedBtn'
 const DropDown = () => {
     const [dropDown, setDropDown] = useState(false);
     useEffect(() => {
-        if(window.screen.width >= 480) 
+        if(window.screen.width >= 769) 
             setDropDown(true)
     }, [])
 
@@ -34,16 +34,18 @@ const DropDown = () => {
 
     return (
         <>
+            <GetStartedBtn className='md:order-1' />
+
             <span
-                className='sm:hidden text-orange-900 text-2xl mr-auto top z-30 w-12 p-3 flex opacity-70'
+                className='md:hidden text-orange-900 mr-2 z-30 p-2 flex opacity-70'
                 onClick={() => setDropDown(!dropDown)}
             >
-                <FontAwesomeIcon icon={faBars} size='xl' />
+                <FontAwesomeIcon icon={faBars} className='!text-xl' />
             </span>
 
             <XyzTransition
                 xyz='fade up'
-                className='h-96 sm:h-auto gap-y-5 sm:pb-0 pb-8 f-col-end sm:f-between sm:relative z-0 absolute w-full sm:bg-transparent bg-opacity-95 bg-black-700 top-0 left-0'
+                className='h-80 md:h-auto gap-y-5 ml-7 md:pb-0 pb-8 f-col-end md:flex-row md:f-between md:relative z-0 absolute w-full md:bg-transparent bg-opacity-95 bg-black-750 top-0 right-0'
             >
                 {dropDown && 
                     <div>
@@ -52,7 +54,6 @@ const DropDown = () => {
                                 <Link href={href} key={index}>{text}</Link>
                             ))
                         }
-                        <GetStartedBtn />
                     </div>
                 }
             </XyzTransition>

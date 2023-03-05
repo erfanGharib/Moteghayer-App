@@ -37,7 +37,7 @@ const services = [
 
 const Services = () => {
     return (
-        <section id='Services' className='f-col-center justify-center w-5/6 md:w-4/5 lg:max-h-800 max-w-750 md:h-95vh'>
+        <section id='Services' className='f-col-center justify-center w-5/6 md:w-4/5 lg:max-h-800 max-w-750'>
             <h2 className='mb-7'>با متغیر خلق کنید تا دیده شوید</h2>
             <div className='flex content-center justify-between items-start flex-wrap'>
                 {
