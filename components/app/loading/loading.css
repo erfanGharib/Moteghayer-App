@@ -1,0 +1,15 @@
+.custom-loader {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:#fcaf21;
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    animation: sh1 3s infinite cubic-bezier(0.3,1,0,1);
+}
+@keyframes sh1 {
+  33% {border-radius: 0; background:#e49035 ;clip-path: polygon(0 0,100% 0,100% 100%,0 100%)}
+  66% {border-radius: 0; background:#aa4206 ;clip-path: polygon(50% 0,50% 0,100% 100%,0 100%)}
+}
+#loading {
+  position: absolute;
+}

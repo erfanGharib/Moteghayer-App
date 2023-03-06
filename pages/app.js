@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import { useState, useEffect, useRef } from 'react'
 import dynamic from 'next/dynamic';
-const Editor = dynamic(() => import('../components/app/editor'), {
+import Loading from '@/components/app/loading/loading';
+const Editor = dynamic(() => import('../components/app/editor.js'), {
   ssr: false,
 });
 
@@ -18,6 +19,7 @@ const MainApp = () => {
         <title>متغیر | بنر ساز آنلاین</title>
         <meta name="description" content="Online Banner Maker" />
       </Head>
+      <Loading />
       <Editor />
     </>
   )

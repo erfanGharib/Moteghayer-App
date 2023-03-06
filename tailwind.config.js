@@ -42,6 +42,7 @@ module.exports = {
       height: {
         '95vh': '95vh',
         '79vh': '79vh',
+        '87vh': '87vh',
         '90vh': '90vh',
       },
       transitionDelay: {

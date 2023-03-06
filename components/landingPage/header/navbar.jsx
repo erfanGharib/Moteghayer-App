@@ -8,7 +8,7 @@ const NavBar = () => {
 
     const scrollFunction = () => {
         if (document.documentElement.scrollTop >= 10) {
-            setNavCssClass('h-20 bg-opacity-70 backdrop-blur-xl shadow-xl');
+            setNavCssClass('h-20 bg-blur');
         }
         else setNavCssClass('h-28 bg-opacity-0');
     }

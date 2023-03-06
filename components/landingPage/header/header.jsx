@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <header className='w-full h-full relative f-col-center bg-black-780'>
             <NavBar />
-            <div className='lg:f-between lg:flex-row f-col-r-center max-w-1360 z-10 w-4/5 pt-14 h-90vh'>
+            <div className='lg:f-between lg:flex-row f-col-r-center max-w-1360 z-10 w-4/5 pt-14 h-79vh md:h-87vh'>
                 <div className='lg:w-1/3 sm:w-3/5 w-full lg:mt-0 mt-5'>
                     <h2 className='leading-9 sm:leading-tight'>
                         از تغییر نترسید زیرا تغییر قانون زندگی و موفقیت است
@@ -34,18 +34,18 @@ const Header = () => {
                 </div>
             </div>
 
-            <div
+            <button
                 style={{ background: `url(${comeDownImg.src}) no-repeat center`, backgroundSize: '290% 130%' }}
                 className='w-full h-16 block absolute right-0 -bottom-8 z-0'
             >
                 <Image
-                    className='animate-bounce cursor-pointer mx-auto mt-16'
+                    className='animate-bounce mx-auto mt-16'
                     src={downArrowIco}
                     alt='down arrow'
                     width={30}
                     height={0}
                 />
-            </div>
+            </button>
         </header>
     )
 }

@@ -11,6 +11,7 @@ import "@blueprintjs/popover2/lib/css/blueprint-popover2.css";
 
 import { createStore } from "polotno/model/store";
 import { setTranslations } from 'polotno/config';
+import Loading from "./loading/loading";
 setTranslations({
   sidePanel: {
     text: 'متن',
@@ -40,7 +41,7 @@ const page = store.addPage();
 
 export const Editor = () => {  
   return (
-    <div>
+    <>
       <PolotnoContainer style={{ width: "100vw", height: "100vh" }}>
         <SidePanelWrap>
           <SidePanel store={store} />
@@ -51,7 +52,7 @@ export const Editor = () => {
           <ZoomButtons store={store} />
         </WorkspaceWrap>
       </PolotnoContainer>
-    </div>
+    </>
   );
 };
 

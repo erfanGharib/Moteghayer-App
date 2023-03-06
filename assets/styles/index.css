@@ -32,12 +32,21 @@
     font-weight: normal;
     font-display: swap;
 }
-
+::selection {
+    @apply !bg-black-500;
+    /* background-color: #e49035 !important; */
+}
+.bg-blur {
+    @apply bg-opacity-70 backdrop-blur-xl shadow-xl;
+}
 * {
     color-scheme: dark;
 }
+html {
+    @apply h-full;
+}
 body, #__next {
-    @apply w-full bg-black-800 text-lenearWhite-900 f-col-center text-lg;
+    @apply w-full bg-black-800 text-lenearWhite-900 h-full f-col-center text-lg;
     font-family: yekanbakh, picoopic, Arial, Helvetica, sans-serif;
     direction: rtl;
 }
@@ -113,7 +122,9 @@ i {
 div {
     @apply text-lenearWhite-900;
 }
-
+button, a {
+    @apply md:cursor-pointer cursor-default ;
+}
 .bp4-navbar {
     @apply !bg-black-750 text-opacity-70 text-lenearWhite-900;
 }
@@ -135,6 +146,27 @@ div {
 .bp4-divider {
     @apply !border-black-600;
 }
-/* button:hover {
-    background-color: red !important;
-} */
+.go141666149:hover, .go141666149.active {
+    background-color: #353535;
+}
+.go141666149 > * {
+    padding: 0 !important;
+}
+.go3009151065 {
+    @apply !h-full;
+}
+@media screen and (max-width: 500px) {
+    .go141666149 {
+        height: 70px !important;
+    }
+}
+
+.go3464034812::-webkit-scrollbar {
+    height: 4px;
+}
+.go3464034812::-webkit-scrollbar-track {
+  background: #00000000; 
+}
+.go3464034812::-webkit-scrollbar-thumb {
+  background: #444; 
+}
