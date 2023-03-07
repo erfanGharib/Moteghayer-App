@@ -56,6 +56,9 @@ body, #__next {
 .f-start {
     @apply flex justify-center items-start;
 }
+.f-end {
+    @apply flex justify-center items-end;
+}
 .f-start-start {
     @apply flex justify-start items-start;
 }
@@ -114,7 +117,7 @@ h3 {
     @apply text-orange-800 text-2xl font-semibold picoopicFont;
 }
 p {
-    @apply mt-2 opacity-50 text-justify;
+    @apply mt-2 opacity-50;
 }
 i {
     @apply block;

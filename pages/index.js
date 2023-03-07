@@ -1,10 +1,9 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
-import Header from '../components/landingPage/header/header'
+import Header from '../components/landingPage/header'
 import Main from '../components/landingPage/main/main'
-import Footer from '../components/landingPage/footer/footer'
-
-const inter = Inter({ subsets: ['latin'] })
+import Footer from '../components/footer/footer'
+import NavbarFooter from '@/Layout/navbarFooter'
 
 const Landing = () => {
   return (
@@ -14,9 +13,10 @@ const Landing = () => {
         <meta name="description" content="Online Banner Maker" />
       </Head>
 
-      <Header />
-      <Main />
-      <Footer />
+      <NavbarFooter>
+        <Header />
+        <Main />
+      </NavbarFooter>
     </>
   )
 }

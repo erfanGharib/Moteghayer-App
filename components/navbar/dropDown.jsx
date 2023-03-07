@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import '@animxyz/core'
 import { XyzTransition } from '@animxyz/react'
-import GetStartedBtn from '../getStartedBtn'
+import GetStartedBtn from '../landingPage/getStartedBtn'
 
 const DropDown = () => {
     const [dropDown, setDropDown] = useState(false);
@@ -23,7 +23,7 @@ const DropDown = () => {
             text: 'ارتباط با ما'
         },
         {
-            href: '/contact-us',
+            href: '/members',
             text: 'اعضای متغیر'
         },
         {

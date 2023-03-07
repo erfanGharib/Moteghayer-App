@@ -17,8 +17,8 @@ const contactWay = [
 
 const Footer = () => {
     return (
-        <footer className='w-full max-w-1360 f-col-center'>
-            <div className='md:w-4/5 w-4/6 pb-10'>
+        <footer className='w-full max-w-1360 f-col-center border-t border-black-750 border-opacity-50'>
+            <div className='md:w-4/5 w-4/6 py-10'>
                 <div className='w-4/5 f-col-start md:flex-row md:f-start-start gap-y-7 md:gap-y-0 md:gap-x-20'>
                     <FSection title='متغیر'>
                         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
