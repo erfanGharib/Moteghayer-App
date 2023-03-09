@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Logo from '../../public/moteghayer-logo.svg'
+import Logo from '../../../public/moteghayer-logo.svg'
 import { useState, useEffect } from 'react'
 import DropDown from './dropDown'
 import Link from 'next/link'

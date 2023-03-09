@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import '@animxyz/core'
 import { XyzTransition } from '@animxyz/react'
-import GetStartedBtn from '../landingPage/getStartedBtn'
+import GetStartedBtn from '../getStartedBtn'
 
 const DropDown = () => {
     const [dropDown, setDropDown] = useState(false);

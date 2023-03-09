@@ -1,4 +1,3 @@
-import React, { useEffect, useRef } from "react";
 import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from "polotno";
 import { Toolbar } from "polotno/toolbar/toolbar";
 import { ZoomButtons } from "polotno/toolbar/zoom-buttons";
@@ -11,7 +10,7 @@ import "@blueprintjs/popover2/lib/css/blueprint-popover2.css";
 
 import { createStore } from "polotno/model/store";
 import { setTranslations } from 'polotno/config';
-import Loading from "./loading/loading";
+
 setTranslations({
   sidePanel: {
     text: 'متن',

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { useState, useEffect, useRef } from 'react'
 import dynamic from 'next/dynamic';
 import Loading from '@/components/app/loading/loading';
+
 const Editor = dynamic(() => import('../components/app/editor.js'), {
   ssr: false,
 });

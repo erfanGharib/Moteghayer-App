@@ -33,7 +33,7 @@
     font-display: swap;
 }
 ::selection {
-    @apply !bg-black-500;
+    @apply !bg-black-700;
     /* background-color: #e49035 !important; */
 }
 .bg-blur {
@@ -41,13 +41,16 @@
 }
 * {
     color-scheme: dark;
+    font-family: yekanbakh, picoopic, sans-serif, Helvetica, sans-serif;
+}
+input, textarea {
+    @apply bg-black-780 transition-shadow py-2 px-3 outline-none border border-lenearWhite-30 placeholder:text-lenearWhite-100 text-lenearWhite-700;
 }
 html {
     @apply h-full;
 }
 body, #__next {
     @apply w-full bg-black-800 text-lenearWhite-900 h-full f-col-center text-lg;
-    font-family: yekanbakh, picoopic, Arial, Helvetica, sans-serif;
     direction: rtl;
 }
 .f-center {
@@ -104,8 +107,11 @@ main > * {
 .moteghayer-gradient {
     background-image: linear-gradient(-90deg, #fcaf21, #e49035, #7a2c00);
 }
+input:focus {
+    box-shadow: 0 0 0 5px #ffffff20;
+}
 a {
-    @apply hover:opacity-95 transition-opacity opacity-60;
+    @apply hover:!text-lenearWhite-500 transition-opacity !text-lenearWhite-200 !no-underline;
 }
 .picoopicFont {
     font-family: picoopic;
@@ -129,10 +135,10 @@ button, a {
     @apply md:cursor-pointer cursor-default ;
 }
 .bp4-navbar {
-    @apply !bg-black-750 text-opacity-70 text-lenearWhite-900;
+    @apply !bg-black-750 text-lenearWhite-700;
 }
 .bp4-icon, a[target="_blank"], span > svg, .bp4-button-text, .bp4-input {
-    @apply !text-base text-opacity-70 !border-black-600 !text-lenearWhite-900 placeholder:!text-lenearWhite-900 placeholder:!opacity-50;
+    @apply !text-base !border-black-600 !text-lenearWhite-700 placeholder:!text-lenearWhite-200;
 }
 .polotno-page-container > div > span > button > span > svg {
     @apply !text-black-500;

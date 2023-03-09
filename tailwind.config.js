@@ -9,10 +9,23 @@ module.exports = {
       colors: {
         orange: {
           800: '#C38227',
+          850: '#cf7a00',
           900: '#EF9E2C'
         },
         lenearWhite: {
-          900: '#FFECD2'
+          900: '#FFECD2',
+          800: '#FFECD2ff',
+          700: '#FFECD2ee',
+          600: '#FFECD2dd',
+          500: '#FFECD2cc',
+          400: '#FFECD2bb',
+          300: '#FFECD2aa',
+          200: '#FFECD299',
+          100: '#FFECD288',
+          75: '#FFECD255',
+          50: '#FFECD233',
+          30: '#FFECD218',
+          25: '#FFECD211',
         },
         black: {
           500: '#555555',
@@ -50,7 +63,8 @@ module.exports = {
         400: '400ms'
       },
       boxShadow: {
-        'cs': '0 5px 50px #EF9E2C55' 
+        'cs': '0 5px 50px #EF9E2C55',
+        'hov': '0 17px 15px #00000022'
       }
     },
   },

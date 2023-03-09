@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import GetStartedBtn from './getStartedBtn'
+import GetStartedBtn from '../global/getStartedBtn'
 
 import laptopImg from '../../assets/images/laptop.svg'
 import downArrowIco from '../../assets/icons/down-arrow.svg'

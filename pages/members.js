@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import NavbarFooter from '@/Layout/navbarFooter'
+import Layout from '@/Layout/layout'
 import MemeberInfo from '@/components/members/memberInfo';
 import aliasgharMirshahi from '@/assets/images/members/aliasgharMirshahi.jpg'
 import erfanGharib from '@/assets/images/members/erfanGharib.jpg'
@@ -12,7 +12,7 @@ const Members = () => {
         <meta name="description" content="اعضای متغیر" />
       </Head>
 
-      <NavbarFooter>
+      <Layout>
         <div className='f-col-center'>
           <h2 className='text-2xl mt-28'>اعضای متغیر</h2>
           <div className='f-start flex-col sm:flex-row w-4/5 sm:h-2/3 mt-5 mb-12 gap-7'>
@@ -47,7 +47,7 @@ const Members = () => {
             </MemeberInfo>
           </div>
         </div>
-      </NavbarFooter>
+      </Layout>
     </>
   )
 }
