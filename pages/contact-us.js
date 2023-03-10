@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Layout from '@/Layout/layout'
 import Btn from '@/components/global/btn';
 
-const Members = () => {
+const ContactUs = () => {
   return (
     <>
       <Head>
@@ -31,4 +31,4 @@ const Members = () => {
   )
 }
 
-export default Members;
+export default ContactUs;
