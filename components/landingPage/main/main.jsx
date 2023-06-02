@@ -33,7 +33,7 @@ const Main = () => {
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                 </p>
-                <Link href='team'>اطلاعات بیشتر</Link>
+                <Link href='/members' className='btn'>اطلاعات بیشتر</Link>
             </ImgTxtContainer>
 
             <ImgTxtContainer img={[handImg, 'گرافیست ها']} id='graphists'>
@@ -42,7 +42,7 @@ const Main = () => {
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                 </p>
-                <Link href='team'>اطلاعات بیشتر</Link>
+                <Link href='/' className='btn'>اطلاعات بیشتر</Link>
             </ImgTxtContainer>
 
             <div className='w-full f-center h-52 relative moteghayer-gradient overflow-hidden'>

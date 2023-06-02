@@ -14,9 +14,9 @@ const ContactUs = () => {
         <div className='f-col-center w-4/5'>
           <h2 className='text-2xl mt-28'>ارتباط با متغیر</h2>
           <form className='gap-3 flex flex-wrap my-7'>
-            <input placeholder='نام' className='w-full md:w-1/3' />
-            <input placeholder='ایمیل' className='w-full md:w-1/3' />
-            <input placeholder='موضوع' className='w-full md:w-2/3' />
+            <input placeholder='نام' className='w-full md:w-1/3 grow' />
+            <input placeholder='ایمیل' className='w-full md:w-1/3 grow' />
+            <input placeholder='موضوع' className='w-full grow' />
             <textarea 
               className='w-full'
               placeholder='متن پیام' 

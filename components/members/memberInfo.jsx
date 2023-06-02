@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const MemeberInfo = ({ img = { src: '', alt: '' }, name, children }) => {
     return (
-        <div className='f-col-center w-full sm:w-2/5 bg-black-790 relative p-6'>
+        <div className='f-col-center w-full sm:w-2/5 bg-black-780 relative p-6'>
             <span
-                className='overflow-hidden min-h-[16.5rem] max-h-[16.5rem] f-center border-8 border-black-780'
+                className='overflow-hidden min-h-[16.5rem] max-h-[16.5rem] f-center border-8 border-black-750'
             >
                 <Image
                     src={img.src}

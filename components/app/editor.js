@@ -21,8 +21,34 @@ setTranslations({
     photos: 'عکس ها',
     templates: 'قالب ها',
     resize: 'تغییر اندازه',
-    'Search...': 'جست‌و‌جو',
-    'photos by': 'faoiduf'
+    searchPlaceholder: 'جست‌ و‌ جو',
+    searchTemplatesWithSameSize: 'نمایش قالب ها با اندازه یکسان',
+    uploadFont: 'آپلود فونت',
+    myFonts: 'فونت های من',
+    headerText: 'متن عنوان',
+    createHeader: 'ساخت عنوان',
+    subHeaderText: 'عنوان فرعی',
+    createSubHeader: 'ساخت عنوان فرعی',
+    bodyText: 'متن بدنه',
+    createBody: 'ساخت متن بدنه',
+    upload: 'آپلود',
+    uploadImage: 'آپلود عکس',
+    uploadTip: '',
+    noResults: 'هیچ عکسی آپلود نشده',
+    width: 'عرض',
+    height: 'ارتفاع',
+    useMagicResize: 'استفاده از تغییر اندازه جادویی',
+    magicResizeDescription: 'تغییر اندازه جادویی به طور خودکار اندازه را تغییر می دهد و عناصر را روی بوم حرکت می دهد',
+    layersTip: 'المان های فعال در صفحه:',
+    noLayers: 'هیچ المانی در صفحه وجود ندارد'
+  },
+  workspace: {
+      // noPages: '',
+      addPage: 'اضافه کردن صفحه',
+      removePage: 'حذف کردن صفحه',
+      duplicatePage: 'کپی صفحه',
+      // moveUp: ''
+      // moveDown: string;
   },
   toolbar: {
     position: 'موقعیت',

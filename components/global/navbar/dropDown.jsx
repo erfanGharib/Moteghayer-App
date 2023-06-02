@@ -15,8 +15,8 @@ const DropDown = () => {
 
     const menuItems = [
         {
-            href: '/login',
-            text: 'ورود'
+            href: '/sign-up',
+            text: 'ثبت نام'
         },
         {
             href: '/contact-us',
@@ -27,7 +27,7 @@ const DropDown = () => {
             text: 'اعضای متغیر'
         },
         {
-            href: '/contact-us',
+            href: '#',
             text: 'کاریابی'
         },
     ];

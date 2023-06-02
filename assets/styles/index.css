@@ -32,6 +32,18 @@
     font-weight: normal;
     font-display: swap;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-black-800; 
+}
+::-webkit-scrollbar-thumb {
+    @apply bg-black-600;
+}
+
 ::selection {
     @apply !bg-black-700;
     /* background-color: #e49035 !important; */
@@ -42,6 +54,7 @@
 * {
     color-scheme: dark;
     font-family: yekanbakh, picoopic, sans-serif, Helvetica, sans-serif;
+    outline: none;
 }
 input, textarea {
     @apply bg-black-780 transition-shadow py-2 px-3 outline-none border border-lenearWhite-30 placeholder:text-lenearWhite-100 text-lenearWhite-700;
@@ -111,13 +124,13 @@ input:focus {
     box-shadow: 0 0 0 5px #ffffff20;
 }
 a {
-    @apply hover:!text-lenearWhite-500 transition-opacity !text-lenearWhite-200 !no-underline;
+    @apply hover:opacity-100 opacity-50 text-lenearWhite-500 transition-opacity !no-underline;
 }
 .picoopicFont {
     font-family: picoopic;
 }
 h2 {
-    @apply text-orange-800 text-2xl leading-3 md:text-4xl font-bold picoopicFont;
+    @apply text-orange-800 leading-9 !mb-4 text-2xl md:text-4xl font-bold picoopicFont;
 }
 h3 {
     @apply text-orange-800 text-2xl font-semibold picoopicFont;
@@ -149,17 +162,15 @@ button, a {
 .bp4-input-group > .bp4-icon {
     @apply right-0;
 }
-.bp4-button-text {
+.bp4-button.bp4-minimal > .bp4-button-text {
     @apply !leading-none mt-1 !right-1 relative;
 }
 .bp4-divider {
     @apply !border-black-600;
 }
 .go141666149:hover, .go141666149.active {
-    background-color: #353535;
-}
-.go141666149 > * {
-    padding: 0 !important;
+    @apply transition-colors;
+    background-color: #3a3a3a !important;
 }
 .go3009151065 {
     @apply !h-full;
@@ -178,4 +189,79 @@ button, a {
 }
 .go3464034812::-webkit-scrollbar-thumb {
   background: #444; 
+}
+.go242266285.bp4-navbar.polotno-panel-container {
+    @apply !pb-0 !pr-0;
+}
+.go242266285.bp4-navbar.polotno-panel-container>div>p {
+    @apply hidden;
+}
+.bp4-input-group {
+    @apply pr-3;
+}
+.bp4-icon.bp4-icon-search {
+    @apply relative right-4;
+}
+.bp4-input {
+    @apply !p-5 !rounded-md;
+}
+.go141666149.polotno-side-panel-tab {
+    @apply !pt-2;
+}
+.bp4-icon.bp4-icon-search {
+    @apply p-1 !w-6 !mr-auto;
+    direction: ltr;
+    font-family: yekanbakh !important;
+}
+.go4160152499 {
+    @apply pr-2;
+    direction: ltr;
+}
+.bp4-control.bp4-switch.bp4-align-right {
+    @apply flex justify-center;
+}
+.go242266285.bp4-navbar.polotno-panel-container > div > div {
+    @apply pr-2.5;
+}
+.bp4-tab {
+    @apply !text-orange-800 ml-3;
+} 
+.bp4-tab[aria-selected="false"] {
+    @apply !text-orange-800 opacity-50 ml-3;
+} 
+.bp4-tab-indicator {
+    @apply !bg-orange-800;
+}
+.go2230631831 {
+    @apply !pt-0;
+}
+.bp4-button.bp4-minimal.bp4-align-left > svg {
+    @apply invert;
+}
+span.bp4-button-text > span {
+    @apply mb-1 !text-sm;
+    direction: ltr !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+.bp4-button-text {
+    direction: ltr !important;
+    @apply !m-auto flex justify-between items-center;
+}
+.bp4-icon.bp4-icon-import {
+    @apply !mr-0 ml-1;
+}
+.bp4-button.bp4-minimal > .bp4-button-text {
+    @apply !mt-1;
+}
+.bp4-control-indicator {
+    @apply !mt-1;
+}
+label > .bp4-button, .bp4-button[aria-controls="numericInput-11"], .bp4-button[aria-controls="numericInput-9"] {
+    @apply !bg-orange-900 bg-opacity-20 !rounded-md;
+}
+label > .bp4-button > span {
+    @apply !ml-2 !mr-0;
+}
+.btn {
+    @apply bg-orange-900 bg-opacity-20 text-orange-900 px-5 py-2;
 }
