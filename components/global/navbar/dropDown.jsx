@@ -51,7 +51,7 @@ const DropDown = () => {
                     <div>
                         {
                             menuItems.map(({ href, text }, index) => (
-                                <Link href={href} key={index}>{text}</Link>
+                                <Link href={href} key={index} className='link'>{text}</Link>
                             ))
                         }
                     </div>

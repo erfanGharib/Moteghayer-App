@@ -18,7 +18,7 @@ const Header = () => {
 
                     <div>
                         <GetStartedBtn />
-                        <Link className='mr-7' href='/moteghayer-team'>با متغیر آشنا شوید</Link>
+                        <Link className='mr-7 link' href='/moteghayer-team'>با متغیر آشنا شوید</Link>
                     </div>
                 </div>
 
@@ -35,6 +35,10 @@ const Header = () => {
             <button
                 style={{ background: `url(${comeDownImg.src}) no-repeat center`, backgroundSize: '290% 130%' }}
                 className='w-full h-16 block absolute right-0 -bottom-8 z-0'
+                onClick={() => window.scrollTo({ 
+                    top: document.querySelector('#Advantages')?.offsetTop - 160, 
+                    behavior: 'smooth' 
+                })}
             >
                 <Image
                     className='animate-bounce mx-auto mt-16'

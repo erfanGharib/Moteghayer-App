@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Layout from '@/Layout/layout'
 import Link from 'next/link';
 
-const notFound = () => {
+const NotFound = () => {
     return (
         <>
             <Head>
@@ -11,13 +11,13 @@ const notFound = () => {
             </Head>
 
             <Layout>
-                <div>
-                    <h2>404</h2>
-                    <p>صفحه مورد نظر یافت نشد <Link>بازگشت به صفحه اصلی</Link></p>
+                <div className='h-full w-full flex justify-center items-center flex-col'>
+                    <h2 className='!text-[5rem]'>404</h2>
+                    <p>صفحه مورد نظر یافت نشد <Link href='/'>صفحه اصلی</Link></p>
                 </div>
             </Layout>
         </>
     )
 }
 
-export default notFound;
+export default NotFound;

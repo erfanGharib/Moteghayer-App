@@ -123,8 +123,11 @@ main > * {
 input:focus {
     box-shadow: 0 0 0 5px #ffffff20;
 }
+.link {
+    @apply hover:opacity-70 opacity-40 !border-none !shadow-none !text-lenearWhite-500 transition-opacity;
+}
 a {
-    @apply hover:opacity-100 opacity-50 text-lenearWhite-500 transition-opacity !no-underline;
+    @apply transition-opacity !no-underline;
 }
 .picoopicFont {
     font-family: picoopic;
@@ -263,5 +266,5 @@ label > .bp4-button > span {
     @apply !ml-2 !mr-0;
 }
 .btn {
-    @apply bg-orange-900 bg-opacity-20 text-orange-900 px-5 py-2;
+    @apply bg-orange-900 bg-opacity-20 opacity-70 hover:opacity-100 !text-orange-900 px-5 py-2;
 }

@@ -26,7 +26,7 @@ const Footer = () => {
 
                     <FSection title='همراه ما باشید'>
                         {contactWay.map(([link, ico, title], i) => (
-                            <Link href={link} key={i} className='f-between'>
+                            <Link href={link} key={i} className='f-between link'>
                                 <i 
                                     className='w-6 h-5' 
                                     style={{
